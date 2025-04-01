@@ -9,7 +9,8 @@ import CardActions from '@mui/material/CardActions';
 import fotoGabi from './assets/img-gabi.jpeg';
 
 function App() {
-  const cardRef = React.useRef(null);
+  const cardRef = React.useRef<HTMLDivElement>(null);
+
   const [position, setPosition] = React.useState({ top: 0, left: 0 });
 
   React.useEffect(() => {
